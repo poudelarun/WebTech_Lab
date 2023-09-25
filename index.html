@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container bt-dark d-flex justify-content-center align-items-center hw-100">
+      <div class="card p-5 shadow-lg w-75">
+        <div class="header text-center">
+          <div
+            class="logo-and-title d-flex align-items-center justify-content-center mb-4"
+          >
+            <img
+              src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+              alt="GitHub Logo"
+              class="github-logo"
+              style="max-width: 30px; margin-right: 10px"
+            />
+            <div class="text-primary fs-1 fw-bold">GitHub Profile Viewer</div>
+          </div>
+          <p class="text-secondary">Discover GitHub profiles with style!</p>
+        </div>
+        <div class="form-group text-center mb-4">
+          <label for="username" class="fw-bold fs-4 mb-3"
+            >Select a GitHub Username or Enter One:</label
+          >
+          <select id="username" class="form-select mb-3 fs-5 shadow-sm">
+            <option value="">Select an option</option>
+            <option value="octocat">octocat</option>
+            <option value="mojombo">mojombo</option>
+            <option value="defunkt">defunkt</option>
+            <option value="puppeteer">puppeteer</option>
+            <option value="sindresorhus">sindresorhus</option>
+            <option value="addyosmani">addyosmani</option>
+            <option value="gaearon">gaearon</option>
+            <option value="taylorotwell">taylorotwell</option>
+            <option value="nayafia">nayafia</option>
+            <option value="kentcdodds">kentcdodds</option>
+          </select>
+          <input
+            type="text"
+            id="manualUsername"
+            class="form-control mb-3 fs-5 shadow-sm"
+            placeholder="Enter GitHub username"
+          />
+          <button
+            onclick="fetchProfile()"
+            class="btn btn-primary mt-2 form-control fs-5 fw-bolder shadow-lg"
+          >
+            Fetch Profile
+          </button>
+        </div>
+        <div class="profile text-center w-100" id="profile"></div>
+      </div>
+    </div> <src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    >
+  </body>
+</html>
