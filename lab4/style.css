@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: rgb(141, 134, 134);
+}
+body {
+    background-image: url('images/wall.avif');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(25, 25, 25, 0.26);
+}
+.container {
+    background-image: url('images/wall.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(25, 25, 25, 0.226);
+}
+.title{
+    text-align: center;
+    color: white;
+    margin: 20px 0 0 0;
+    
+}
+
+.detail{
+    width: fit-content;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 2px solid white;
+
+    margin: 10px auto;
+    padding: 0 10px ;
+}
+
+.detail .image-button-container{
+    display: flex;
+    flex-direction: column;
+}
+
+button.button{
+    padding: 10px 20px;
+    width: 500px;
+    margin: 2px;
+    font-size: large;
+}
+
+.detail .details-container{
+    padding: 10px;
+}
+
+.detail .details-container p{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+.detail img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
